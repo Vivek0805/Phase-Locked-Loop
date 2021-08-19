@@ -9,9 +9,9 @@ Contents:
 
 1.Introduction:
 
-Phase Locked Loop(PLL): A phase-locked loop or phase lock loop (PLL) is a control system that generates an output signal whose phase is related to the phase of an input signal. There are several different types; the simplest is an electronic circuit consisting of a variable frequency oscillator and a phase detector in a feedback loop. The oscillator generates a periodic signal, and the phase detector compares the phase of that signal with the phase of the input periodic signal, adjusting the oscillator to keep the phases matched.
+Phase Locked Loop(PLL): A phase-locked loop or phase lock loop (PLL) is a control system that generates an output signal whose phase is related to the phase of an input signal. There are made of several different types; the simplest is an electronic circuit consisting of a variable frequency oscillator and a phase detector in a feedback loop. The oscillator generates a periodic signal, and the phase detector compares the phase of that signal with the phase of the input periodic signal, adjusting the oscillator to keep the phases matched.
 
-Keeping the input and output phase in lock step also implies keeping the input and output frequencies the same. Consequently, in addition to synchronizing signals, a phase-locked loop can track an input frequency, or it can generate a frequency that is a multiple of the input frequency. These properties are used for computer clock synchronization, demodulation, and frequency synthesis.
+Keeping the input and output phase in lock step implies keeping the input and output frequencies the same. Consequently, in addition to synchronizing signals, a phase-locked loop can track an input frequency, or it can generate a frequency that is a multiple of the input frequency. These properties are used for computer clock synchronization, demodulation, and frequency synthesis.
 
 ![PLL loop](https://user-images.githubusercontent.com/83840023/127780271-9c39ef8a-250a-4bdb-aa5a-abd9b37b78a7.png)
 
@@ -20,7 +20,7 @@ Keeping the input and output phase in lock step also implies keeping the input a
 ![PFD](https://user-images.githubusercontent.com/83840023/127793453-5defb3ae-fcaa-44c6-a458-ad68449b242f.JPG)
 
 (ii) Charge Pump:
-PFD generates the digital signal, but the input to the VCO is an analogue signal, thus Charge Pump converts the output of the PFD into analogue signal. This can be done through "Current Steering" circuit ie. by charging and discharging of the capacitor. But why only the capacitor is used and not a resistive load, this is because we are interested in the avarage time of [UP-DOWN] which is achieved by observing the voltage of capacitor.
+PFD generates the digital signal, but the input to the VCO is an analogue signal, thus Charge Pump converts the output of the PFD into analogue signal. This can be done through "Current Steering" circuit ie. by charging and discharging of the capacitor. The usage of capacitor instead of resistor will allow the average time calculation which can be achieved by observing the voltage of the capacitor.
 
 ![CP](https://user-images.githubusercontent.com/83840023/127793803-a29faf96-d242-4504-ac4b-5613501a4965.JPG)
 
